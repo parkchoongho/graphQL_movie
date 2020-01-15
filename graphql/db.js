@@ -39,3 +39,14 @@ export const deleteMovieById = id => {
     return false;
   }
 };
+
+export const addMovie = (name, score) => {
+  const newMovie = {
+    id: movies.length,
+    name,
+    score
+  };
+  movies.push(newMovie);
+
+  return newMovie;
+};
